@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Montserrat", "Fraunces";
+}
+
+@theme {
+  --color-blue: #4c5fd5;
+  --color-bluegrey: #dadbf1;
+}
