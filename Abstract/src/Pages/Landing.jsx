@@ -7,10 +7,12 @@ import authenticate from "../assets/icon-authenticate.png";
 import billing from "../assets/icon-billing.png";
 import comment from "../assets/icon-comment.png";
 import organization from "../assets/icon-organizations.png";
+import logo from "../assets/abstract-svgrepo-com.svg";
+import { MdOutlineHelpOutline } from "react-icons/md";
 
 const Landing = () => {
   return (
-    <div className="w-full h-screen font-['poppins']">
+    <div className="w-full h-screen font-['poppins'] relative">
       <Navbar />
       {/* container for search */}
       <div className="bg-bluegrey h-100 mx-auto w-full">
@@ -29,7 +31,7 @@ const Landing = () => {
         </div>
       </div>
       {/* container for main content */}
-      <div className="p-35 w-full flex flex-col gap-8">
+      <div className="p-35 w-full flex flex-col gap-20">
         <div className="flex justify-between w-full">
           <div className="flex gap-8 md:w-120">
             <img src={design} alt="Design" className="w-20 h-20" />
@@ -109,6 +111,80 @@ const Landing = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* footer code */}
+      <div className="bg-black text-white py-14 px-20 w-full h-100">
+        <footer className="w-full h-full flex">
+          <div className="grid grid-cols-2 md:grid-cols-[110px_110px_130px_200px] gap-8">
+            <div>
+              <h2 className="text-xl font-bold pb-4">Abstract</h2>
+
+              <ul className="hover:cursor-pointer hover:decoration-underline">
+                <li>Start Trial</li>
+                <li>Pricing</li>
+                <li>Download</li>
+                <li></li>
+              </ul>
+            </div>
+            <div>
+              <h2 className="text-xl font-bold pb-4">Resource</h2>
+
+              <ul>
+                <li>Blog</li>
+                <li>Help Center</li>
+                <li>Release Notes</li>
+                <li>Status</li>
+              </ul>
+            </div>
+            <div>
+              <h2 className="text-xl font-bold pb-4">Community</h2>
+
+              <ul>
+                <li>Twitter</li>
+                <li>Linkedin</li>
+                <li>Facebook</li>
+                <li>Dribble</li>
+                <li>Podcast</li>
+              </ul>
+            </div>
+            <div className="flex flex-col gap-8">
+              <div>
+                <h2 className="text-xl font-bold pb-4">Company</h2>
+
+                <ul>
+                  <li>About Us</li>
+                  <li>Careers</li>
+                  <li>Legal</li>
+                </ul>
+              </div>
+              <div>
+                <h2 className="text-md font-bold ">Contact Us</h2>
+
+                <ul>
+                  <li>info@owenabstract.com</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="flex items-end mt-8 ml-auto">
+            <div className="flex flex-col gap-4 ">
+              <img src={logo} alt="abstract logo" className="w-9 h-9" />
+              <p className="text-xl ">
+                © Copyright 2025 <br />
+                Abstract Studio Design, Inc. <br />
+                All rights reserved
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+      {/* code for sticky support button */}
+      <div>
+        <button className="fixed bottom-5 right-10 text-white bg-blue rounded-full z-10 flex items-center gap-1 py-2 px-4 hover:cursor-pointer hover:bg-darkblue hover:text-black">
+          <MdOutlineHelpOutline className="w-5 h-5" />
+          <span className="font-semibold">Help</span>
+        </button>
       </div>
     </div>
   );

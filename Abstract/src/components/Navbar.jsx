@@ -1,23 +1,13 @@
 import React from "react";
 import logo from "../assets/abstract-svgrepo-com.svg";
-// import logo from "../assets/abstract-svg.svg";
-// import logo from "../assets/abstract-svg.svg";
-// import logo from "../assets/abstract-svg.svg";
-// import logo from "../assets/abstract-svg.svg";
-// import logo from "../assets/abstract-svg.svg";
-// import logo from "../assets/abstract-svg.svg";
 
 const Navbar = () => {
   return (
     <div className="flex justify-between px-18 py-4 bg-black text-white text-2xl w-full ">
       <div className="flex gap-4 items-center">
-        <div className="flex gap-2 items-center">
-          <img
-            src={logo}
-            alt="abstract logo"
-            className="text-white accent-white w-8 h-full"
-          />
-          <h1 className=" font-semibold border-r-2 border-white pr-4">
+        <div className="flex gap-2 items-center hover:cursor-pointer hover:text-gray-400 hover:accent-gray-400">
+          <img src={logo} alt="abstract logo" className=" w-8 h-full" />
+          <h1 className=" font-semibold border-r-2 border-white pr-4 ">
             Abstract
           </h1>
         </div>
@@ -31,10 +21,12 @@ const Navbar = () => {
           placeholder="Search..."
           className="bg-white text-black rounded-md px-4 py-2 outline-none md:w-65 placeholder:text-xl"
         />
-        <button className="md:px-6 border border-white py-2 px-2 rounded-md">
+        <button className="md:px-6 border border-white py-2 px-2 rounded-md hover:cursor-pointer hover:text-gray-400">
           Submit a request
         </button>
-        <button className=" bg-blue py-2 px-6 rounded-md">Sign in</button>
+        <button className=" bg-blue py-2 px-6 rounded-md hover:bg-white hover:text-black hover:cursor-pointer">
+          Sign in
+        </button>
       </div>
     </div>
   );
