@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+:root {
+  --color-vanilla: #e4c7a1;
+  --color-pinky: #ff608c;
+  --color-grass: #00c1b5;
+  --color-orangy: #ff651a;
+  --color-yellowy: #ffbe00;
+  --color-reddy: #e30512;
+  --color-bluey: #1d3fbb;
+
+  --font-poppins: "Poppins", "Helvetica", "Arial", "sans-serif";
+  --font-inter: "Inter", "serif";
+  --font-montserrat: "Montserrat", "Helvetica", "Arial", "sans-serif";
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-poppins), var(--font-montserrat), "Fraunces";
+}
